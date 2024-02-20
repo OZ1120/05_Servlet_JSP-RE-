@@ -9,4 +9,19 @@
     <welcome-file>default.jsp</welcome-file>
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
+  
+  <!-- web.xml : 배포 서술자 
+   메인 페이지 지정, 요청주소 Servlet 클래스 매핑
+   
+  -->
+  
+  <servlet>
+  	<servlet-name>exam1</servlet-name>
+  	<servlet-class>edu.kh.servlet.controller.ExamServlet1</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>exam1</servlet-name>
+  	<url-pattern>/ex</url-pattern>
+  </servlet-mapping>
 </web-app>

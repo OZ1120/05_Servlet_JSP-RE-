@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servlet 개인 복습</title>
+</head>
+<body>
+  <h1>2월 20일 복습중</h1>
+  
+  <h2>index.html 파일은 메인 페이지 역할</h2>
+  확인은 web.xml
+
+  <hr>
+  <h1>서버 요청 + 제출 테스트</h1>
+
+  <pre>
+    - 이름, 나이 입력 받아 서버 제출
+
+    준비물(알고 있어야되는 선수 지식)
+
+    1) input 태그 : 값 입력할수 있는 거
+     name 속성 : 태그값 서버 제출시 Key 역할 속성
+     value 속성 : 서버로 제출
+
+     2) form 태그 : 입력값 제출(내부에 input)
+      지정 경로 : 딴 html경로, 서버 요청 주소
+      action 속성 : 제출할 경로, 주소 작성 속성 -> 어느 서버로 보내니
+      method 속성 : 제출 방식 지정 기본값 : GET
+  </pre>
+
+  <form action="/ex" method="get">
+    이름 : <input type="text" name="inputName" > <br>
+    나이 : <input type="text" name="inputAge"> <br>
+    
+    <button>제출</button>
+
+  </form>
+</body>
+</html>
